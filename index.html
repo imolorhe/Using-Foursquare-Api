@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore!</title>
+  <meta name="description" content="Explore places around you. Discover places of interest." />
+  <meta name="keywords" content="foursquare, places, maps" />
+  <meta name="author" content="Chidinma K." />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3ZnX8z3slc6lWKbDLmPUHyWrZ5byHIdQ&libraries=places&callback=initAutocomplete" defer async></script>
+
+
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header class="">
+    </header>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <form action="#" method="GET" id="searchform">
+
+          <div class="form-row">
+
+            <div class="col-9 input-group">
+              <input type="search" class="address-box" name="query" id="query" placeholder="search for a place/category">
+
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+
+            <div class="col">
+              <select class="" name="radius" id="radius">
+                <option value="100">100m</option>
+                <option value="150">150m</option>
+                <option value="200">200m</option>
+                <option value="250">250m</option>
+                <option value="300">300m</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <div id="content">
+      <div id="venuewrapper">
+        <!-- <div id="photos"></div>
+        <div id="venues"></div> -->
+        <div class="venue">
+          <div class="image">
+            <img class="icon" src=""/>
+          </div>
+          <div class="details"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!--<footer>Powered By Foursquare</footer>-->
+</body>
+
+</html>
