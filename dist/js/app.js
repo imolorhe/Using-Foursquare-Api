@@ -2,6 +2,10 @@ const HOST = "https://api.foursquare.com/v2";
 const CLIENT_ID = "C0TLC3WLVTWCDY34FEXLSHXP3OTECVYAOWIIZGMD1HEP3A1I";
 const CLIENT_SECRET = "1BRA5ZO1U1CJB0OJNE1MLSH0VIVZ4SVYRJRGZ5M31GLAK0AO";
 
+// Place initAutocomplete function outside of jQuery.ready() function.
+function initAutocomplete() {
+  console.log('here');
+}
 
 $(document).ready(function() {
     const $venues = $(".venue");
